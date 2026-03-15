@@ -2,6 +2,8 @@
 
 A professional, easy-to-use web application that listens to your voice commands and draws different shapes on a beautiful digital canvas! 
 
+**🔴 Live Demo:** [https://saidebinsabid.github.io/speech_control_canva_p6/](https://saidebinsabid.github.io/speech_control_canva_p6/)
+
 Instead of drawing with a mouse, you simply click the **"Draw"** button, speak a shape name into your microphone, and watch the magic happen.
 
 ## 🚀 Features
