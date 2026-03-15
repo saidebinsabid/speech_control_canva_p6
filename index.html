@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Title -->
+    <title>Voice Controlled Canvas</title>
+
+    <!-- Google Fonts (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- p5.js Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <!-- Header Section -->
+        <div class="header">
+            <h2><i class="fa-solid fa-microphone-lines"></i> Voice Controlled Canvas</h2>
+            <p id="text" class="status-text"><i class="fa-solid fa-info-circle"></i> System is ready. Click "Draw" to
+                start.</p>
+        </div>
+
+        <!-- Controls Section -->
+        <div class="controls">
+            <button class="btn btn-draw" onclick="start()"><i class="fa-solid fa-play"></i> Draw</button>
+            <button class="btn btn-clear" onclick="CleanCanvas()"><i class="fa-solid fa-trash-can"></i> Clear
+                Canvas</button>
+        </div>
+
+        <!-- Canvas Container -->
+        <div id="canvas-wrapper">
+            <!-- p5.js will inject the canvas here -->
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
